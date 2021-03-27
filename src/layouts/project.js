@@ -5,6 +5,19 @@ import {Layout} from '../components/index';
 import {htmlToReact, withPrefix, markdownify} from '../utils';
 
 export default class Project extends React.Component {
+    componentDidMount(){
+                fetch('https://res.cloudinary.com/ajonp/image/list/ducks.json',
+            {
+                mode: 'cors',
+                headers: {
+                    'content-type': 'application/json'
+                }
+            }).then(response => response.json())
+            .then(json => {console.log(json);
+                setImages(json.resources);
+                }
+                )
+    }
     render() {
         return (
             <Layout {...this.props}>
