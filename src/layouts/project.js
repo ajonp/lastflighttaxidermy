@@ -22,7 +22,7 @@ export default class Project extends React.Component {
             }).then(response => response.json())
             .then(json => {
                 console.log(json)
-                this.setState({images: json.resources});
+                this.setState({ images: json.resources });
             }
             )
     }
@@ -47,12 +47,12 @@ export default class Project extends React.Component {
                         <div className="post-content inner-sm">
                             {markdownify(_.get(this.props, 'page.content', null))}
                         </div>
-                        <section style={{  display: 'grid', alignItems: 'center', gridTemplateColumns: repeat('auto-fit', minmax('240px', '1fr'))}}>
-                        {this.state.images.map((image, i) => 
-                        <a href={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`} target="_blank">
-                            <img src={`https://res.cloudinary.com/ajonp/image/upload/f_auto,q_auto,w_800/${image.public_id}`} />
-                            </a>
-                        )}
+                        <section style={{ display: 'grid', alignItems: 'center', gridTemplateColumns: repeat('auto-fit', minmax('240px', '1fr')) }}>
+                            {this.state.images.map((image, i) =>
+                                <a href={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`} target="_blank">
+                                    <img src={`https://res.cloudinary.com/ajonp/image/upload/f_auto,q_auto,w_800/${image.public_id}`} />
+                                </a>
+                            )}
                         </section>
                     </article>
                 </div>
