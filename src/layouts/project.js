@@ -49,7 +49,7 @@ export default class Project extends React.Component {
                         </div>
                         <section className="photo-grid">
                             {this.state.images.map((image, i) =>
-                                <a href={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`} target="_blank">
+                                <a href={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`} target="_blank" key={i}>
                                     <img src={`https://res.cloudinary.com/ajonp/image/upload/f_auto,q_auto,w_800/${image.public_id}`} />
                                 </a>
                             )}
