@@ -12,7 +12,7 @@ export default class Project extends React.Component {
         };
     }
     componentDidMount() {
-        fetch('https://res.cloudinary.com/ajonp/image/list/ducks.json',
+        fetch('https://res.cloudinary.com/ajonp/image/list/lft-ducks.json',
             {
                 mode: 'cors',
                 headers: {
