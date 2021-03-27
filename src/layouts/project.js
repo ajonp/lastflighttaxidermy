@@ -20,7 +20,6 @@ export default class Project extends React.Component {
                 }
             }).then(response => response.json())
             .then(json => {
-                console.log(json);
                 this.state.images = json.resources
             }
             )
