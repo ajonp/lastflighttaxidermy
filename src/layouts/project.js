@@ -14,7 +14,7 @@ export default class Project extends React.Component {
     componentDidMount() {
         console.log(this.props)
         console.log()
-        fetch(`https://res.cloudinary.com/ajonp/image/list/lft-ducks.json`,
+        fetch(`https://res.cloudinary.com/ajonp/image/list/lft-${this.props.path.replace('/photos/','')}.json`,
             {
                 mode: 'cors',
                 headers: {
