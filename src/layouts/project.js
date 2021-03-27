@@ -13,7 +13,7 @@ export default class Project extends React.Component {
     }
     componentDidMount() {
         console.log(this.props)
-        fetch(`https://res.cloudinary.com/ajonp/image/list/lft-${}.json`,
+        fetch(`https://res.cloudinary.com/ajonp/image/list/lft-${this.props.}.json`,
             {
                 mode: 'cors',
                 headers: {
