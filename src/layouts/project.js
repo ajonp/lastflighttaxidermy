@@ -49,6 +49,7 @@ export default class Project extends React.Component {
                         {this.state.images.map((image, i) => 
                         <a href={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`} target="_blank">
                             <img src={`https://res.cloudinary.com/ajonp/image/upload/f_auto,q_auto,w_800/${image.public_id}`} />
+                            </a>
                         )}
                     </article>
                 </div>
