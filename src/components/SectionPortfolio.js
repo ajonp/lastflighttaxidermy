@@ -6,7 +6,7 @@ import {htmlToReact, getPages, Link, withPrefix} from '../utils';
 export default class SectionPortfolio extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
-        let display_projects = _.orderBy(getPages(this.props.pages, '/portfolio'), 'date', 'desc');
+        let display_projects = _.orderBy(getPages(this.props.pages, '/photos'), 'date', 'desc');
         let recent_projects = display_projects.slice(0, _.get(section, 'projects_number', null));
         let post_len = _.size(recent_projects);
         return (
