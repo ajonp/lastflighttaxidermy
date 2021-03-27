@@ -47,7 +47,7 @@ export default class Project extends React.Component {
                             {markdownify(_.get(this.props, 'page.content', null))}
                         </div>
                         {this.state.images.map((image, i) => 
-                            <div>alex</div>
+                            <div>{image.public_id}</div>
                         )}
                     </article>
                 </div>
