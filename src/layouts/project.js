@@ -47,7 +47,7 @@ export default class Project extends React.Component {
                         <div className="post-content inner-sm">
                             {markdownify(_.get(this.props, 'page.content', null))}
                         </div>
-                        <section style={{ display: 'grid', alignItems: 'center', gridTemplateColumns: repeat('auto-fit', minmax('240px', '1fr')) }}>
+                        <section className="">
                             {this.state.images.map((image, i) =>
                                 <a href={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`} target="_blank">
                                     <img src={`https://res.cloudinary.com/ajonp/image/upload/f_auto,q_auto,w_800/${image.public_id}`} />
