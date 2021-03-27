@@ -47,7 +47,7 @@ export default class Project extends React.Component {
                             {markdownify(_.get(this.props, 'page.content', null))}
                         </div>
                         {this.state.images.map((image, i) => 
-                            <img src={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}`</div>
+                            <img src={`https://res.cloudinary.com/ajonp/image/upload/${image.public_id}</div>
                         )}
                     </article>
                 </div>
