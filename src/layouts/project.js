@@ -13,7 +13,7 @@ export default class Project extends React.Component {
     }
     componentDidMount() {
         console.log(this.props)
-        console.log(this.props.path.str)
+        console.log(this.props.path.replace('/photos/'))
         fetch(`https://res.cloudinary.com/ajonp/image/list/lft-ducks.json`,
             {
                 mode: 'cors',
