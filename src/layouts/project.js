@@ -48,7 +48,7 @@ export default class Project extends React.Component {
                         </div>
                         {this.state.images.map((image, i) => 
                             <div>{image.public_id}</div>
-                        })}
+                        )}
                     </article>
                 </div>
             </Layout>
