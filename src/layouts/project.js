@@ -47,7 +47,7 @@ export default class Project extends React.Component {
                         <div className="post-content inner-sm">
                             {markdownify(_.get(this.props, 'page.content', null))}
                         </div>
-                        <section style={{  display: grid
+                        <section style={{  display: 'grid'
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));}}
                         {this.state.images.map((image, i) => 
