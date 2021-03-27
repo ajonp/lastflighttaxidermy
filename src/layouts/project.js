@@ -53,6 +53,7 @@ export default class Project extends React.Component {
                             <img src={`https://res.cloudinary.com/ajonp/image/upload/f_auto,q_auto,w_800/${image.public_id}`} />
                             </a>
                         )}
+                        </section>
                     </article>
                 </div>
             </Layout>
