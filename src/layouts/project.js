@@ -46,8 +46,8 @@ export default class Project extends React.Component {
                         <div className="post-content inner-sm">
                             {markdownify(_.get(this.props, 'page.content', null))}
                         </div>
-                        {this.state.images.map((images, i) => {
-                            <div>{images.public_id}</div>
+                        {this.state.images.map((image, i) => {
+                            <div>{image.public_id}</div>
                         })}
                     </article>
                 </div>
