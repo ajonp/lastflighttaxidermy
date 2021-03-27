@@ -5,6 +5,12 @@ import {Layout} from '../components/index';
 import {htmlToReact, withPrefix, markdownify} from '../utils';
 
 export default class Project extends React.Component {
+      constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
     componentDidMount(){
                 fetch('https://res.cloudinary.com/ajonp/image/list/ducks.json',
             {
