@@ -11,6 +11,7 @@ export default class Project extends React.Component {
             images: []
         };
     }
+    componn
     componentDidMount() {
         fetch('https://res.cloudinary.com/ajonp/image/list/lft-ducks.json',
             {
